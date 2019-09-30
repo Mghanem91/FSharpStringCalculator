@@ -7,7 +7,7 @@ let calc = new MyCalculator()
 
 [<EntryPoint>]
 let main argv =
-    let cc = calc.Add "//[***][---]\n1***2***3---8"
+    let cc = calc.Add "//[***][---]\n1***2***3---8---1008"
 
     printfn "Hello from calculator main method."
     0 // return an integer exit code
