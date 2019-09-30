@@ -27,6 +27,18 @@ let OnePlusOneEqualTwo_NumbersSeperatedByNewLine() =
 
 [<Fact>]
 let NegativeValuesMustFailAndExceptionMustContainsTheNumbers() = 
-     Assert.Equal(2,(calc.Add "1\n-5,-8"))
+     Assert.Equal(-5,(calc.Add "1\n5,-8,-3"))
+     
+[<Fact>]
+let ChangeDelDynamic() = 
+     Assert.Equal(3,(calc.Add "//;\n1;2"))
+
+//[<Fact>]
+//let DifferentArrayOfDelDynamic() = 
+//     Assert.Equal(-2,(calc.Add "//[***][---]\n1***2***3---8"))
+
+//[<Fact>]
+//let AnyNumberMoreThanThousandWillBeIgnored() = 
+//     Assert.Equal(1,(calc.Add "1001\n1"))
 
 
